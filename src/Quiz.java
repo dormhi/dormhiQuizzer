@@ -2,12 +2,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Quiz {
-    private ArrayList<Question> questions; // Soruları tutacak liste
-    private int totalScore; // Toplam puan
+    private ArrayList<Question> questions;
+    private int totalScore;
 
-    // Kurucu Metot (Constructor)
     public Quiz() {
         this.questions = new ArrayList<>();
         this.totalScore = 0;
     }
+}
+public void addQuestion(Question q) {
+    questions.add(q);
 }
