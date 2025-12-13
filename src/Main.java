@@ -2,43 +2,28 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("TEST MAIN CLASS\n");
+        Quiz myQuiz = new Quiz();
 
-        ArrayList<String> options = new ArrayList<>();
-        options.add("Mercury");
-        options.add("Venus");
-        options.add("Earth");
-        options.add("Mars");
+        ArrayList<String> options1 = new ArrayList<>();
+        options1.add("Java");
+        options1.add("Python");
+        options1.add("C++");
+        options1.add("HTML");
 
-        MultipleChoiceQuestion q1 = new MultipleChoiceQuestion(
-                "Which planet is known as the Red Planet?",
-                10,
-                options,
-                4
-        );
+        MultipleChoiceQuestion q1 = new MultipleChoiceQuestion("Which of the following is an interpreted language?", 10, options1, 2);
 
-        System.out.println("MULTIPLE CHOICE QUESTION: " + q1.getText());
-        q1.displayOptions();
+        TrueFalseQuestion q2 = new TrueFalseQuestion("In Java, 'int' is a primitive data type.", 5, true);
 
-        String answer1 = "4";
-        boolean result1 = q1.checkAnswer(answer1);
-        System.out.println("Given Answer: " + answer1 + " -> Result: " + (result1 ? "CORRECT" : "WRONG"));
-        System.out.println("Score Value: " + q1.getScore());
+        ArrayList<String> options2 = new ArrayList<>();
+        options2.add("1990");
+        options2.add("1995");
+        options2.add("2000");
+        MultipleChoiceQuestion q3 = new MultipleChoiceQuestion("In which year was Java first released?", 15, options2, 2);
 
-        System.out.println("\n--------------------------------\n");
+        myQuiz.addQuestion(q1);
+        myQuiz.addQuestion(q2);
+        myQuiz.addQuestion(q3);
 
-        TrueFalseQuestion q2 = new TrueFalseQuestion(
-                " The speed of light is approximately 300,000 km per second.",
-                5,
-                true
-        );
-
-        System.out.println("TRUE FALSE QUESTION: " + q2.getText());
-
-        String answer2 = "False";
-        boolean result2 = q2.checkAnswer(answer2);
-        System.out.println("Answer: " + answer2 + " -> Result: " + (result2 ? "CORRECT" : "WRONG"));
-
-        System.out.println("\n TEST FINISH ");
+        myQuiz.start();
     }
 }

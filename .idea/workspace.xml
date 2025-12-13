@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="Question and gradable abstract added in nwe classes">
-      <change afterPath="$PROJECT_DIR$/src/MultipleChoiceQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TrueFalseQuestion.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="quiz starter method added in Quiz.java">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gradable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gradable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quiz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +36,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/dormhi./IdeaProjects/dormhiquizzer/src/Main.java"
+    "onboarding.tips.debug.path": "/Users/dormhi./IdeaProjects/dormhiquizzer/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager">
@@ -76,7 +77,47 @@
       <option name="project" value="LOCAL" />
       <updated>1765356651599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="MultipleChoice and TrueFalse question classes added with polymorphism">
+      <option name="closed" value="true" />
+      <created>1765362896588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765362896588</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Main test class added">
+      <option name="closed" value="true" />
+      <created>1765363650482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765363650482</updated>
+    </task>
+    <task id="LOCAL-00004" summary="quiz class created">
+      <option name="closed" value="true" />
+      <created>1765543176947</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765543176947</updated>
+    </task>
+    <task id="LOCAL-00005" summary="question function added in Quiz.java">
+      <option name="closed" value="true" />
+      <created>1765544308838</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765544308838</updated>
+    </task>
+    <task id="LOCAL-00006" summary="quiz starter method added in Quiz.java">
+      <option name="closed" value="true" />
+      <created>1765545416678</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765545416678</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +133,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Question and gradable abstract added in nwe classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question and gradable abstract added in nwe classes" />
+    <MESSAGE value="MultipleChoice and TrueFalse question classes added with polymorphism" />
+    <MESSAGE value="Main test class added" />
+    <MESSAGE value="quiz class created" />
+    <MESSAGE value="question function added in Quiz.java" />
+    <MESSAGE value="quiz starter method added in Quiz.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="quiz starter method added in Quiz.java" />
   </component>
 </project>
