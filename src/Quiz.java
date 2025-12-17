@@ -10,20 +10,21 @@ public class Quiz {
         this.totalScore = 0;
     }
 
-    // Method to add a single question to the list
     public void addQuestion(Question q) {
         questions.add(q);
     }
 
-    public void start() {
+    public void start(Student student) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("WELCOME TO THE AREL VADISI QUİZ CHALLENGE!   ");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("WELCOME THE AREL VADISI QUIZ CHALLENCE:  " + student.getName().toUpperCase() + " (" + student.getStudentId() + ")");
         System.out.println("Get ready! Here come the questions...\n");
 
         int questionCount = 1;
 
         for (Question q : questions) {
+
             System.out.println("Question " + questionCount + ": " + q.getText());
             System.out.println("[Points: " + q.getScore() + "]");
 
@@ -39,19 +40,20 @@ public class Quiz {
             if (q.checkAnswer(userAnswer)) {
                 System.out.println(">>> Spot on! That's correct. (+" + q.getScore() + " pts)");
                 totalScore += q.getScore();
+                student.addToScore(q.getScore());
             } else {
                 System.out.println(">>> Oops, that's not quite right.");
             }
 
-            System.out.println("-------------------------------------------");
+            System.out.println("-");
             questionCount++;
         }
 
-        System.out.println("\n*** YOU SUCCESFULLY FINISHED THE QUIZ ***");
-        System.out.println("Let's see how you did...");
-        System.out.println("Total Score: " + totalScore);
+        System.out.println("\n*** QUIZ FINISHED ***");
+        System.out.println("Student: " + student.getName());
+        System.out.println("Final Score: " + student.getExamScore());
 
-        if (totalScore > 0) {
+        if (student.getExamScore() > 10) {
             System.out.println("Great job!");
         } else {
             System.out.println("Better luck next time!");

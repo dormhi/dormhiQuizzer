@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        Student currentStudent = new Student("Ahmet Yilmaz", "2023101");
+
         Quiz myQuiz = new Quiz();
 
         ArrayList<String> options1 = new ArrayList<>();
@@ -20,10 +22,12 @@ public class Main {
         options2.add("2000");
         MultipleChoiceQuestion q3 = new MultipleChoiceQuestion("In which year was Java first released?", 15, options2, 2);
 
+
         myQuiz.addQuestion(q1);
         myQuiz.addQuestion(q2);
         myQuiz.addQuestion(q3);
 
-        myQuiz.start();
+
+        myQuiz.start(currentStudent);
     }
 }
