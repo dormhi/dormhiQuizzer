@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="xml">
-      <change afterPath="$PROJECT_DIR$/src/questions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="new java class: QuestionLoader.java">
+      <change beforePath="$PROJECT_DIR$/src/QuestionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765984344558</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="new data file: questions.csv">
+      <option name="closed" value="true" />
+      <created>1766090496352</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1766090496352</updated>
+    </task>
+    <task id="LOCAL-00015" summary="new java class: QuestionLoader.java">
+      <option name="closed" value="true" />
+      <created>1766090606537</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1766090606537</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +213,8 @@
     <MESSAGE value="student class created in Student.java" />
     <MESSAGE value="quiz and main class modified because of Student.java" />
     <MESSAGE value="xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml" />
+    <MESSAGE value="new data file: questions.csv" />
+    <MESSAGE value="new java class: QuestionLoader.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="new java class: QuestionLoader.java" />
   </component>
 </project>
