@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="new abstract created User.java">
-      <change afterPath="$PROJECT_DIR$/src/Teacher.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="teacher class addded and waiting to add new functions in Teacher.java">
+      <change afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766244767320</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="teacher class addded and waiting to add new functions in Teacher.java">
+      <option name="closed" value="true" />
+      <created>1766244962026</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1766244962026</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,6 +250,7 @@
     <MESSAGE value="sample question methods transfered in QuestionLoader.java" />
     <MESSAGE value="main class modified for new question databasse in Main.java" />
     <MESSAGE value="new abstract created User.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="new abstract created User.java" />
+    <MESSAGE value="teacher class addded and waiting to add new functions in Teacher.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="teacher class addded and waiting to add new functions in Teacher.java" />
   </component>
 </project>
