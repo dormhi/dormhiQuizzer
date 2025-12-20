@@ -1,3 +1,4 @@
+//student.getName() changed to student.getFullName()
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class Quiz {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n");
         System.out.println("\n");
-        System.out.println("WELCOME THE AREL VADISI QUIZ CHALLENCE:  " + student.getName().toUpperCase() + " (" + student.getStudentId() + ")");
+        System.out.println("WELCOME THE AREL VADISI QUIZ CHALLENCE:  " + student.getFullName().toUpperCase() + " (" + student.getFullName() + ")");
         System.out.println("Get ready! Here come the questions...\n");
 
         int questionCount = 1;
@@ -50,7 +51,7 @@ public class Quiz {
         }
 
         System.out.println("\n*** QUIZ FINISHED ***");
-        System.out.println("Student: " + student.getName());
+        System.out.println("Student: " + student.getFullName());
         System.out.println("Final Score: " + student.getExamScore());
 
         if (student.getExamScore() > 10) {

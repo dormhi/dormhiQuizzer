@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="teacher class addded and waiting to add new functions in Teacher.java">
-      <change afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="questions.csv moved">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quiz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,12 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -219,7 +227,31 @@
       <option name="project" value="LOCAL" />
       <updated>1766244962026</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Admin class addded and waiting to add new functions in Admin.java">
+      <option name="closed" value="true" />
+      <created>1766245293291</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1766245293291</updated>
+    </task>
+    <task id="LOCAL-00021" summary="student class chanced the class for super class">
+      <option name="closed" value="true" />
+      <created>1766246098900</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1766246098900</updated>
+    </task>
+    <task id="LOCAL-00022" summary="questions.csv moved">
+      <option name="closed" value="true" />
+      <created>1766246118394</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1766246118394</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +283,9 @@
     <MESSAGE value="main class modified for new question databasse in Main.java" />
     <MESSAGE value="new abstract created User.java" />
     <MESSAGE value="teacher class addded and waiting to add new functions in Teacher.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="teacher class addded and waiting to add new functions in Teacher.java" />
+    <MESSAGE value="Admin class addded and waiting to add new functions in Admin.java" />
+    <MESSAGE value="student class chanced the class for super class" />
+    <MESSAGE value="questions.csv moved" />
+    <option name="LAST_COMMIT_MESSAGE" value="questions.csv moved" />
   </component>
 </project>

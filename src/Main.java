@@ -1,3 +1,4 @@
+//new requirements addded = ıd, name, username, password
 import java.util.ArrayList;
 
 public class Main {
