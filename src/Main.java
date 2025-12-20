@@ -2,12 +2,13 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Student currentStudent = new Student("Ahmet Yilmaz", "2023101"); //just example. it will be upgraded
 
+        Student currentStudent = new Student("2023101", "Ahmet Yilmaz", "ahmet123", "pass1234");
+// Format: ID, Name, Username, Password
         Quiz myQuiz = new Quiz();
 
         QuestionLoader loader = new QuestionLoader();
-        ArrayList<Question> fileQuestions = loader.loadQuestions("questions.csv"); // new question databasse
+        ArrayList<Question> fileQuestions = loader.loadQuestions("questions.csv");
 
         for (Question q : fileQuestions) {
             myQuiz.addQuestion(q);
