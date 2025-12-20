@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="main class modified for new question databasse in Main.java">
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="new abstract created User.java">
+      <change afterPath="$PROJECT_DIR$/src/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766093774939</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="new abstract created User.java">
+      <option name="closed" value="true" />
+      <created>1766244767320</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1766244767320</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +241,7 @@
     <MESSAGE value="new java class: QuestionLoader.java" />
     <MESSAGE value="sample question methods transfered in QuestionLoader.java" />
     <MESSAGE value="main class modified for new question databasse in Main.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="main class modified for new question databasse in Main.java" />
+    <MESSAGE value="new abstract created User.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="new abstract created User.java" />
   </component>
 </project>
