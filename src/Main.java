@@ -1,24 +1,29 @@
-//new requirements addded = ıd, name, username, password
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
 
-        Student currentStudent = new Student("2023101", "Ahmet Yilmaz", "ahmet123", "pass1234");
-// Format: ID, Name, Username, Password
-        Quiz myQuiz = new Quiz();
+        System.out.println("--- SISTEM TESTI BASLIYOR ---");
 
-        QuestionLoader loader = new QuestionLoader();
-        ArrayList<Question> fileQuestions = loader.loadQuestions("questions.csv");
+        // 1. Auth Servisini Başlat
+        AuthService auth = new AuthService();
 
-        for (Question q : fileQuestions) {
-            myQuiz.addQuestion(q);
-        }
+        // 2. Admin Olarak Giriş Yapmayı Dene (users.csv'de bu kullanıcı olmalı)
+        // Kullanıcı adı: admin, Şifre: admin123
+        User loggedUser = auth.login("admin", "admin123");
 
-        if (fileQuestions.size() > 0) {
-            myQuiz.start(currentStudent);
+        // 3. Sonucu Kontrol Et
+        if (loggedUser != null) {
+            System.out.println(">>> GIRIS BASARILI!");
+            System.out.println("Hosgeldin: " + loggedUser.getFullName());
+            System.out.println("Sistemdeki Rolun: " + loggedUser.getClass().getSimpleName());
+
+            // Eğer giriş yapan Admin ise ona özel mesaj göster
+            if (loggedUser instanceof Admin) {
+                System.out.println("(Yonetici paneli yetkisi onaylandi)");
+            }
         } else {
-            System.out.println("No questions found. Please check questions.csv file.");
+            System.out.println(">>> GIRIS BASARISIZ! Kullanici adi veya sifre hatali.");
         }
+
+        System.out.println("--- TEST BITTI ---");
     }
 }

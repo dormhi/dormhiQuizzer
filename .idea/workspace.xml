@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST] IDManager tested in IDManagerTest.java">
-      <change afterPath="$PROJECT_DIR$/src/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST]auethenticator Junit test class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -38,6 +38,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AuthServiceTest.executor": "Run",
     "JUnit.IDManagerTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -67,6 +68,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Tests" />
       <recent name="" />
     </key>
   </component>
@@ -104,8 +106,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AuthServiceTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AuthServiceTest" />
         <item itemvalue="JUnit.IDManagerTest" />
       </list>
     </recent_temporary>
@@ -335,7 +337,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766252556844</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="authenticator system created in AuthService.java">
+      <option name="closed" value="true" />
+      <created>1766347840816</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1766347840816</updated>
+    </task>
+    <task id="LOCAL-00029" summary="[TEST]auethenticator Junit test class">
+      <option name="closed" value="true" />
+      <created>1766347881648</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1766347881648</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -350,8 +368,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Question and gradable abstract added in nwe classes" />
-    <MESSAGE value="MultipleChoice and TrueFalse question classes added with polymorphism" />
     <MESSAGE value="Main test class added" />
     <MESSAGE value="quiz class created" />
     <MESSAGE value="question function added in Quiz.java" />
@@ -375,6 +391,8 @@
     <MESSAGE value="allowed_ids.csv created" />
     <MESSAGE value="engine ID verificator class IDManager.java created" />
     <MESSAGE value="[TEST] IDManager tested in IDManagerTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TEST] IDManager tested in IDManagerTest.java" />
+    <MESSAGE value="authenticator system created in AuthService.java" />
+    <MESSAGE value="[TEST]auethenticator Junit test class" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TEST]auethenticator Junit test class" />
   </component>
 </project>
