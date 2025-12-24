@@ -53,9 +53,9 @@ public class MenuSystem {
         System.out.println("1. Giris Yap");
         System.out.println("2. Kayit Ol");
         System.out.println("0. Ana Menuye Don");
-// will be contiune    }
-
-    private void showAdminLogin() {
-        System.out.println("\n--- YONETICI GIRISI ---");
+// will be contiune
     }
-}
+    private void showAdminLogin () {
+            System.out.println("\n--- YONETICI GIRISI ---");
+        }
+    }
