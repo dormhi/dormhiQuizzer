@@ -61,4 +61,15 @@ public class IDManager {
             System.out.println("ID not found!");
         }
     }
+    public void listAllIds() {
+        System.out.println("\n--- SISTEMDEKI IZINLI NUMARALAR ---");
+        if (allowedIds.isEmpty()) {
+            System.out.println("Liste bos!");
+        } else {
+            for (Map.Entry<String, String> entry : allowedIds.entrySet()) {
+                System.out.println(">> ID: " + entry.getKey() + "  |  ROL: " + entry.getValue());
+            }
+        }
+        System.out.println("-----------------------------------");
+    }
 }
