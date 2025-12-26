@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST] new menu system class tested again">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuSystem.java" afterDir="false" />
-    </list>
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="user role authentication method changed in PerformLogin method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.QuestionLoaderTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
@@ -91,15 +88,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.AuthServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IDManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dormhiquizzer" />
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.IDManagerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,13 +123,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuestionLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dormhiquizzer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.QuestionLoaderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestionLoaderTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MenuSystemTest2" />
         <item itemvalue="JUnit.AuthServiceTest" />
         <item itemvalue="JUnit.MenuSystemTest" />
-        <item itemvalue="JUnit.IDManagerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -450,7 +453,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766735192130</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="user role authentication method changed in PerformLogin method">
+      <option name="closed" value="true" />
+      <created>1766736634731</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1766736634731</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,8 +476,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="xml" />
-    <MESSAGE value="new data file: questions.csv" />
     <MESSAGE value="new java class: QuestionLoader.java" />
     <MESSAGE value="sample question methods transfered in QuestionLoader.java" />
     <MESSAGE value="main class modified for new question databasse in Main.java" />
@@ -490,6 +499,8 @@
     <MESSAGE value="new methodS added in MenuSystem.java" />
     <MESSAGE value="new methodS added showAdminPanel in MenuSystem.java" />
     <MESSAGE value="[TEST] new menu system class tested again" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TEST] new menu system class tested again" />
+    <MESSAGE value="user role authentication method changed" />
+    <MESSAGE value="user role authentication method changed in PerformLogin method" />
+    <option name="LAST_COMMIT_MESSAGE" value="user role authentication method changed in PerformLogin method" />
   </component>
 </project>
