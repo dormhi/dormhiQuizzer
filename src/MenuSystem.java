@@ -138,5 +138,43 @@ public class MenuSystem {
         quiz.start(student);
     }
 
+    //ADMIN PANEL
+    private void showAdminPanel(Admin admin) {
+        IDManager adminManager = new IDManager();
 
+        while (true) {
+            System.out.println("   YONETICI KONTROL PANELI (" + admin.getUsername() + ")");
+            System.out.println("1. Izinli Numaralari Listele");
+            System.out.println("2. Yeni Numara Ekle (Izin Ver)");
+            System.out.println("3. Numara Sil (Izni Kaldir)");
+            System.out.println("0. Cikis Yap");
+            System.out.print("Seciminiz: ");
+
+            String choice = scanner.nextLine();
+
+            if (choice.equals("1")) {
+                adminManager.listAllIds();
+            } else if (choice.equals("2")) {
+                System.out.print("Eklenecek Numara (ID): ");
+                String newId = scanner.nextLine();
+                System.out.print("Rol (STUDENT / TEACHER / ADMIN): ");
+                String role = scanner.nextLine().toUpperCase();
+
+                if (role.equals("STUDENT") || role.equals("TEACHER") || role.equals("ADMIN")) {
+                    adminManager.addId(newId, role);
+                } else {
+                    System.out.println("HATA: Gecersiz rol!");
+                }
+            } else if (choice.equals("3")) {
+                System.out.print("Silinecek Numara (ID): ");
+                String delId = scanner.nextLine();
+                adminManager.removeId(delId);
+            } else if (choice.equals("0")) {
+                System.out.println("Yonetici oturumu kapatiliyor...");
+                break;
+            } else {
+                System.out.println("Hatali secim!");
+            }
+        }
+    }
 }
