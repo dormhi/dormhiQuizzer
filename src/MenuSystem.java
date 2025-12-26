@@ -86,8 +86,7 @@ public class MenuSystem {
         User user = authService.login(username, password);
 
         if (user != null) {
-            String userRole = user.getClass().getSimpleName().toUpperCase();
-
+            String userRole = user.getClass().getSimpleName().toUpperCase(java.util.Locale.ENGLISH);
             if (userRole.equals(requiredRole)) {
                 System.out.println(">>> GIRIS BASARILI! Hosgeldin " + user.getFullName());
 

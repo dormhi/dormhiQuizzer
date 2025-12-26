@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="new methodS added showAdminPanel in MenuSystem.java">
-      <change afterPath="$PROJECT_DIR$/src/Tests/MenuSystemTest2.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST] new menu system class tested again">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MenuSystemTest2">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
@@ -136,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MenuSystemTest2" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MenuSystemTest2" />
         <item itemvalue="JUnit.AuthServiceTest" />
         <item itemvalue="JUnit.MenuSystemTest" />
         <item itemvalue="JUnit.IDManagerTest" />
@@ -441,7 +442,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766734981805</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="[TEST] new menu system class tested again">
+      <option name="closed" value="true" />
+      <created>1766735192130</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1766735192130</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,7 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="quiz and main class modified because of Student.java" />
     <MESSAGE value="xml" />
     <MESSAGE value="new data file: questions.csv" />
     <MESSAGE value="new java class: QuestionLoader.java" />
@@ -481,6 +489,7 @@
     <MESSAGE value="new method added listAllIds() in IDManager.java" />
     <MESSAGE value="new methodS added in MenuSystem.java" />
     <MESSAGE value="new methodS added showAdminPanel in MenuSystem.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="new methodS added showAdminPanel in MenuSystem.java" />
+    <MESSAGE value="[TEST] new menu system class tested again" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TEST] new menu system class tested again" />
   </component>
 </project>
