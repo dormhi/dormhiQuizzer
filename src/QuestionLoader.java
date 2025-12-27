@@ -43,7 +43,7 @@ public class QuestionLoader {
 
         return loadedQuestions;
     }
-    /
+
     public void appendQuestion(String csvLine) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("questions.csv", true))) {
             bw.write(csvLine);
