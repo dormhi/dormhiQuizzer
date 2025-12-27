@@ -1,6 +1,9 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
+import java.io.IOException;
 
 public class QuestionLoader {
 
@@ -39,5 +42,14 @@ public class QuestionLoader {
         }
 
         return loadedQuestions;
+    }
+    public void appendQuestion(String csvLine) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("questions.csv", true))) {
+            bw.write(csvLine);
+            bw.newLine(); // Yeni satıra geç
+            System.out.println("Soru basariyla veritabani dosyasina eklendi!");
+        } catch (IOException e) {
+            System.out.println("Soru kaydedilirken hata olustu: " + e.getMessage());
+        }
     }
 }

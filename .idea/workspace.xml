@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="user role authentication method changed in PerformLogin method" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST] question function tested">
+      <change beforePath="$PROJECT_DIR$/src/QuestionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionLoader.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +40,7 @@
     "JUnit.IDManagerTest.executor": "Run",
     "JUnit.MenuSystemTest.executor": "Run",
     "JUnit.MenuSystemTest2.executor": "Run",
+    "JUnit.QuestionLoaderTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -70,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.QuestionLoaderTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
@@ -140,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuestionLoaderTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.QuestionLoaderTest" />
         <item itemvalue="JUnit.MenuSystemTest2" />
         <item itemvalue="JUnit.AuthServiceTest" />
         <item itemvalue="JUnit.MenuSystemTest" />
@@ -461,7 +464,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766736634731</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="[TEST] question function tested">
+      <option name="closed" value="true" />
+      <created>1766737361267</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1766737361267</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -476,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new java class: QuestionLoader.java" />
     <MESSAGE value="sample question methods transfered in QuestionLoader.java" />
     <MESSAGE value="main class modified for new question databasse in Main.java" />
     <MESSAGE value="new abstract created User.java" />
@@ -501,6 +511,7 @@
     <MESSAGE value="[TEST] new menu system class tested again" />
     <MESSAGE value="user role authentication method changed" />
     <MESSAGE value="user role authentication method changed in PerformLogin method" />
-    <option name="LAST_COMMIT_MESSAGE" value="user role authentication method changed in PerformLogin method" />
+    <MESSAGE value="[TEST] question function tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TEST] question function tested" />
   </component>
 </project>
