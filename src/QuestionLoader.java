@@ -43,10 +43,11 @@ public class QuestionLoader {
 
         return loadedQuestions;
     }
+    /
     public void appendQuestion(String csvLine) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("questions.csv", true))) {
             bw.write(csvLine);
-            bw.newLine(); // Yeni satıra geç
+            bw.newLine();
             System.out.println("Soru basariyla veritabani dosyasina eklendi!");
         } catch (IOException e) {
             System.out.println("Soru kaydedilirken hata olustu: " + e.getMessage());
