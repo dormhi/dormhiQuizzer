@@ -95,6 +95,9 @@ public class MenuSystem {
                 } else if (user instanceof Admin) {
                     showAdminPanel((Admin) user);
                 }
+                else if (user instanceof Teacher) {
+                    showTeacherPanel((Teacher) user);
+                }
             } else {
                 System.out.println(">>> HATA: Bu panelden sadece " + requiredRole + " giris yapabilir!");
             }
@@ -173,6 +176,72 @@ public class MenuSystem {
                 break;
             } else {
                 System.out.println("Hatali secim!");
+            }
+        }
+    }
+
+    // TEACHER PANEL
+    private void showTeacherPanel(Teacher teacher) {
+        QuestionLoader loader = new QuestionLoader();
+
+        while (true) {
+            System.out.println("   OGRETMEN PANEL (" + teacher.getFullName() + ")");
+            System.out.println("1. Yeni Soru Ekle");
+            System.out.println("0. Cikis Yap");
+            System.out.print("Seciminiz: ");
+
+            String choice = scanner.nextLine();
+
+            if (choice.equals("1")) {
+                System.out.println("\n--- YENI SORU OLUSTURMA ---");
+                System.out.println("Soru Tipi Secin:");
+                System.out.println("M - Coktan Secmeli (Multiple Choice)");
+                System.out.println("T - Dogru/Yanlis (True/False)");
+                System.out.print("Secim (M/T): ");
+                String type = scanner.nextLine().toUpperCase();
+
+                if (type.equals("M")) {
+                    // MC Soru Formatı: MC;Soru;Puan;DogruCevapIndex;Şık1;Şık2;Şık3...
+                    System.out.print("Soru Metni: ");
+                    String text = scanner.nextLine();
+                    System.out.print("Puan Degeri (Orn: 10): ");
+                    String score = scanner.nextLine();
+
+                    System.out.print("Kac secenek olacak? (Orn: 4): ");
+                    int numOptions = Integer.parseInt(scanner.nextLine());
+
+                    StringBuilder optionsPart = new StringBuilder();
+                    for (int i = 1; i <= numOptions; i++) {
+                        System.out.print(i + ". secenek Metni: ");
+                        String option = scanner.nextLine();
+                        optionsPart.append(";").append(option);
+                    }
+
+                    System.out.print("Dogru seceneğin numarasi hangisi? (1-" + numOptions + "): ");
+                    String answer = scanner.nextLine();
+
+                    String csvLine = "MC;" + text + ";" + score + ";" + answer + optionsPart.toString();
+                    loader.appendQuestion(csvLine);
+
+                } else if (type.equals("T")) {
+                    // TF Soru Formatı: TF;Soru;Puan;DogruCevap(true/false)
+                    System.out.print("Soru Metni: ");
+                    String text = scanner.nextLine();
+                    System.out.print("Puan Degeri (Orn: 5): ");
+                    String score = scanner.nextLine();
+                    System.out.print("Dogru Cevap (true/false): ");
+                    String answer = scanner.nextLine().toLowerCase();
+
+                    String csvLine = "TF;" + text + ";" + score + ";" + answer;
+                    loader.appendQuestion(csvLine);
+
+                } else {
+                    System.out.println("Gecersiz soru tipi!");
+                }
+
+            } else if (choice.equals("0")) {
+                System.out.println("Ogretmen oturumu kapatiliyor...");
+                break;
             }
         }
     }
