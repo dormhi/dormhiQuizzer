@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST]bug fixed ve junit tested in QuestionLoader">
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="teacher panel and function added in MenuSystem.java">
+      <change afterPath="$PROJECT_DIR$/src/Tests/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +43,7 @@
     "JUnit.MenuSystemTest2.executor": "Run",
     "JUnit.QuestionLoaderTest.executor": "Run",
     "JUnit.QuestionLoaderTest2.executor": "Run",
+    "JUnit.StudentTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -74,25 +76,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.StudentTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dormhiquizzer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AuthServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,13 +129,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dormhiquizzer" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StudentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.QuestionLoaderTest2" />
         <item itemvalue="JUnit.QuestionLoaderTest" />
         <item itemvalue="JUnit.MenuSystemTest2" />
-        <item itemvalue="JUnit.AuthServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -497,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766837704533</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="teacher panel and function added in MenuSystem.java">
+      <option name="closed" value="true" />
+      <created>1766844118202</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1766844118202</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -512,7 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="teacher class addded and waiting to add new functions in Teacher.java" />
     <MESSAGE value="Admin class addded and waiting to add new functions in Admin.java" />
     <MESSAGE value="student class chanced the class for super class" />
     <MESSAGE value="questions.csv moved" />
@@ -537,6 +540,7 @@
     <MESSAGE value="new import added şn QuestionLoader.java" />
     <MESSAGE value="append question added in QuestionLoader.java" />
     <MESSAGE value="[TEST]bug fixed ve junit tested in QuestionLoader" />
-    <option name="LAST_COMMIT_MESSAGE" value="[TEST]bug fixed ve junit tested in QuestionLoader" />
+    <MESSAGE value="teacher panel and function added in MenuSystem.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="teacher panel and function added in MenuSystem.java" />
   </component>
 </project>
