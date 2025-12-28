@@ -84,8 +84,14 @@ public class AuthService {
         try (BufferedReader br = new BufferedReader(new FileReader(USER_FILE))) {
             String line;
             while ((line = br.readLine()) != null) {
-                if (line.startsWith(id + ";")) {
-                    return true;
+                if (line.trim().isEmpty()) continue;
+
+                String[] parts = line.split(";");
+                if (parts.length > 0) {
+                    String existingId = parts[0].trim();
+                    if (existingId.equals(id.trim())) {
+                        return true;
+                    }
                 }
             }
         } catch (IOException e) {
@@ -93,4 +99,3 @@ public class AuthService {
         }
         return false;
     }
-}
