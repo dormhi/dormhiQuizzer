@@ -30,32 +30,25 @@ public class AuthService {
     }
 
     public boolean register(String id, String fullName, String username, String password) {
-        //ID permission control
         if (!idManager.isIdAllowed(id)) {
-            System.out.println("Registration Failed: ID is not authorized!");
+            System.out.println("Kayıt Başarısız: Bu numaranın kayıt izni yok (Davetiye listenizi kontrol edin)!");
             return false;
         }
 
         if (isUserAlreadyRegistered(id)) {
-            System.out.println("Registration Failed: User already registered!");
+            System.out.println("Kayıt Başarısız: Bu numara zaten sisteme kayıtlı! Lütfen giriş yapın.");
             return false;
         }
 
         String role = idManager.getRole(id);
-
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(USER_FILE, true))) {
             String newUserLine = id + ";" + role + ";" + fullName + ";" + username + ";" + password;
-
-            bw.write(newUserLine); // Veriyi yaz
-            bw.newLine();          // MUTLAKA ENTER'A BAS (Satır atla)
-
-            System.out.println("Registration Successful! Please login.");
+            bw.write(newUserLine);
+            bw.newLine();
+            System.out.println("Kayıt Başarılı! Şimdi giriş yapabilirsiniz.");
             return true;
-        }
-
-
-        catch (IOException e) {
-            System.out.println("Error saving user: " + e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Dosya hatası: " + e.getMessage());
             return false;
         }
     }
