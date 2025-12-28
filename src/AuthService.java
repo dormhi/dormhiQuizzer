@@ -12,13 +12,13 @@ public class AuthService {
     public User login(String username, String password) {
         try (BufferedReader br = new BufferedReader(new FileReader(USER_FILE))) {
             String line;
-            while ((line = br.readLine()) != null) {
-                String[] parts = line.split(";");// Format: ID;ROLE;NAME;USERNAME;PASSWORD
-                if (parts.length == 5) {
-                    String fileUser = parts[3];
-                    String filePass = parts[4];
 
-                    if (fileUser.equals(username) && filePass.equals(password)) {
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(";");
+                if (parts.length == 5) {
+                    String fileUser = parts[3].trim();
+                    String filePass = parts[4].trim();
+                    if (fileUser.equalsIgnoreCase(username.trim()) && filePass.equals(password.trim())) {
                         return createUserObject(parts);
                     }
                 }
@@ -42,13 +42,19 @@ public class AuthService {
         }
 
         String role = idManager.getRole(id);
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(USER_FILE, true))) {// Format: ID;ROLE;NAME;USERNAME;PASSWORD
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(USER_FILE, true))) {
             String newUserLine = id + ";" + role + ";" + fullName + ";" + username + ";" + password;
-            bw.write(newUserLine);
-            bw.newLine();
+
+            bw.write(newUserLine); // Veriyi yaz
+            bw.newLine();          // MUTLAKA ENTER'A BAS (Satır atla)
+
             System.out.println("Registration Successful! Please login.");
             return true;
-        } catch (IOException e) {
+        }
+
+
+        catch (IOException e) {
             System.out.println("Error saving user: " + e.getMessage());
             return false;
         }

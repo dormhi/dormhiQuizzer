@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="teacher panel and function added in MenuSystem.java">
-      <change afterPath="$PROJECT_DIR$/src/Tests/StudentTest.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST] Student class jUnit tested">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
@@ -140,8 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StudentTest" />
         <item itemvalue="JUnit.QuestionLoaderTest2" />
         <item itemvalue="JUnit.QuestionLoaderTest" />
         <item itemvalue="JUnit.MenuSystemTest2" />
@@ -501,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766844118202</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="[TEST] Student class jUnit tested">
+      <option name="closed" value="true" />
+      <created>1766914971855</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1766914971855</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Admin class addded and waiting to add new functions in Admin.java" />
     <MESSAGE value="student class chanced the class for super class" />
     <MESSAGE value="questions.csv moved" />
     <MESSAGE value="getters changed in main. java" />
@@ -541,6 +550,7 @@
     <MESSAGE value="append question added in QuestionLoader.java" />
     <MESSAGE value="[TEST]bug fixed ve junit tested in QuestionLoader" />
     <MESSAGE value="teacher panel and function added in MenuSystem.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="teacher panel and function added in MenuSystem.java" />
+    <MESSAGE value="[TEST] Student class jUnit tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TEST] Student class jUnit tested" />
   </component>
 </project>
