@@ -12,7 +12,8 @@ public class MenuSystem {
 
     public void start() {
         while (true) {
-            System.out.println("   AREL VADISI QUIZ CHALLENGE - ANA MENU");
+            System.out.println("  AREL VADISI QUIZ CHALLENGE A HOSGELDINIZ");
+            System.out.println("ANA MENU");
             System.out.println("1. Ogretmen Girisi");
             System.out.println("2. Ogrenci Girisi");
             System.out.println("3. Yonetici (Admin) Girisi");
