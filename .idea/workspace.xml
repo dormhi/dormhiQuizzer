@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="upgraded version MenuSystem.java">
-      <change beforePath="$PROJECT_DIR$/src/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthService.java" afterDir="false" />
-    </list>
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[JAVADOC] AuthService explanation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,14 +153,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Main test class added">
-      <option name="closed" value="true" />
-      <created>1765363650482</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1765363650482</updated>
     </task>
     <task id="LOCAL-00004" summary="quiz class created">
       <option name="closed" value="true" />
@@ -548,7 +538,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767002524219</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="[JAVADOC] AuthService explanation">
+      <option name="closed" value="true" />
+      <created>1767003274424</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1767003274424</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,7 +561,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="authenticator system created in AuthService.java" />
     <MESSAGE value="[TEST]auethenticator Junit test class" />
     <MESSAGE value="example login scenario" />
     <MESSAGE value="menu enter and login ui created in MenuSystem.java" />
@@ -588,6 +585,7 @@
     <MESSAGE value="[BUG FİX] &quot;}&quot; error fixed" />
     <MESSAGE value="[JAVADOC] Student.java explanation" />
     <MESSAGE value="upgraded version MenuSystem.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgraded version MenuSystem.java" />
+    <MESSAGE value="[JAVADOC] AuthService explanation" />
+    <option name="LAST_COMMIT_MESSAGE" value="[JAVADOC] AuthService explanation" />
   </component>
 </project>

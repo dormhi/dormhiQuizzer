@@ -1,3 +1,6 @@
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -51,6 +54,31 @@ public class QuestionLoader {
             System.out.println("Soru basariyla veritabani dosyasina eklendi!");
         } catch (IOException e) {
             System.out.println("Soru kaydedilirken hata olustu: " + e.getMessage());
+        }
+    }
+    public List<String> getAllRawQuestions() {
+        try {
+            return Files.readAllLines(Paths.get("questions.csv"));
+        } catch (IOException e) {
+            System.out.println("Dosya okunurken hata: " + e.getMessage());
+            return new ArrayList<>(); // Boş liste dön
+        }
+    }
+
+    public void deleteQuestionAt(int index) {
+        try {
+            List<String> lines = getAllRawQuestions();
+
+            if (index >= 0 && index < lines.size()) {
+                String removed = lines.remove(index); // Listeden sil
+
+                Files.write(Paths.get("questions.csv"), lines);
+                System.out.println("Soru silindi: " + removed.split(";")[1]);
+            } else {
+                System.out.println("HATA: Gecersiz soru numarasi!");
+            }
+        } catch (IOException e) {
+            System.out.println("Silme isleminde hata: " + e.getMessage());
         }
     }
 }
