@@ -186,8 +186,9 @@ public class MenuSystem {
         QuestionLoader loader = new QuestionLoader();
 
         while (true) {
-            System.out.println("   OGRETMEN PANEL (" + teacher.getFullName() + ")");
+            System.out.println("  OGRETMEN PANEL : (" + teacher.getFullName() + ")");
             System.out.println("1. Yeni Soru Ekle");
+            System.out.println("2. Soru Sil");
             System.out.println("0. Cikis Yap");
             System.out.print("Seciminiz: ");
 
@@ -202,7 +203,6 @@ public class MenuSystem {
                 String type = scanner.nextLine().toUpperCase();
 
                 if (type.equals("M")) {
-                    // MC Soru Formatı: MC;Soru;Puan;DogruCevapIndex;Şık1;Şık2;Şık3...
                     System.out.print("Soru Metni: ");
                     String text = scanner.nextLine();
                     System.out.print("Puan Degeri (Orn: 10): ");
@@ -225,7 +225,6 @@ public class MenuSystem {
                     loader.appendQuestion(csvLine);
 
                 } else if (type.equals("T")) {
-                    // TF Soru Formatı: TF;Soru;Puan;DogruCevap(true/false)
                     System.out.print("Soru Metni: ");
                     String text = scanner.nextLine();
                     System.out.print("Puan Degeri (Orn: 5): ");
@@ -240,9 +239,43 @@ public class MenuSystem {
                     System.out.println("Gecersiz soru tipi!");
                 }
 
+            } else if (choice.equals("2")) {
+                // --- YENİ EKLENEN SİLME KISMI ---
+                System.out.println("\n--- VERITABANINDAKI SORULAR ---");
+                // Import java.util.List gerekebilir, hata verirse dosya başına ekle
+                java.util.List<String> lines = loader.getAllRawQuestions();
+
+                if (lines.isEmpty()) {
+                    System.out.println(">> Listelenecek soru bulunamadi.");
+                } else {
+                    // Soruları Listele
+                    for (int i = 0; i < lines.size(); i++) {
+                        String[] parts = lines.get(i).split(";");
+                        if (parts.length > 1) {
+                            System.out.println((i + 1) + ". " + parts[1] + " (" + parts[2] + " Puan)");
+                        }
+                    }
+
+                    System.out.print("\nSilmek istediginiz soru no (Iptal icin 0): ");
+                    try {
+                        int delIndex = Integer.parseInt(scanner.nextLine());
+                        if (delIndex > 0 && delIndex <= lines.size()) {
+                            loader.deleteQuestionAt(delIndex - 1);
+                        } else if (delIndex == 0) {
+                            System.out.println("Silme islemi iptal edildi.");
+                        } else {
+                            System.out.println("Gecersiz numara!");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Lutfen sadece rakam giriniz.");
+                    }
+                }
+
             } else if (choice.equals("0")) {
                 System.out.println("Ogretmen oturumu kapatiliyor...");
                 break;
+            } else {
+                System.out.println("Hatali secim!");
             }
         }
     }

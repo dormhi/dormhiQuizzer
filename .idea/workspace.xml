@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[JAVADOC] AuthService explanation" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="question eraser algoritm part 1">
+      <change beforePath="$PROJECT_DIR$/src/MenuSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuSystem.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,14 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00004" summary="quiz class created">
-      <option name="closed" value="true" />
-      <created>1765543176947</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1765543176947</updated>
     </task>
     <task id="LOCAL-00005" summary="question function added in Quiz.java">
       <option name="closed" value="true" />
@@ -546,7 +540,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767003274424</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="question eraser algoritm part 1">
+      <option name="closed" value="true" />
+      <created>1767003899701</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1767003899701</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -561,7 +563,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[TEST]auethenticator Junit test class" />
     <MESSAGE value="example login scenario" />
     <MESSAGE value="menu enter and login ui created in MenuSystem.java" />
     <MESSAGE value="main class changed for MenuSystem.java" />
@@ -586,6 +587,7 @@
     <MESSAGE value="[JAVADOC] Student.java explanation" />
     <MESSAGE value="upgraded version MenuSystem.java" />
     <MESSAGE value="[JAVADOC] AuthService explanation" />
-    <option name="LAST_COMMIT_MESSAGE" value="[JAVADOC] AuthService explanation" />
+    <MESSAGE value="question eraser algoritm part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="question eraser algoritm part 1" />
   </component>
 </project>
