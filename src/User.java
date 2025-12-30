@@ -1,4 +1,4 @@
-public abstract class User {   //main abstract
+public abstract class User implements ICsvConvertible {
     private String id;       // ID for everyone (Student Number, Teacher ID, or Admin Code)
     private String fullName;
     private String username;
@@ -26,5 +26,10 @@ public abstract class User {   //main abstract
 
     public boolean checkPassword(String inputPassword) {  //pasword line
         return this.password.equals(inputPassword);
+    }
+    //Interface Metod
+    @Override
+    public String toCsvString() {
+        return id + ";" + getClass().getSimpleName().toUpperCase() + ";" + fullName + ";" + username + ";" + password;
     }
 }
