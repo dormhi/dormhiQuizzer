@@ -1,4 +1,6 @@
-9999;ADMIN;System Admin;admin;admin123
-341234;STUDENT;davut cüci;dormhi;davut
-2023101;STUDENT;hamsi;hamsi;hamsi
-501;TEACHER;hakan ünal;hakan23;hakan23
+1001;ADMIN;AREL REKTORLUK;Arelrektor;Arel2007rektor
+1002;ADMIN;OGRENCI ISLERI;studentoffice;Arel2007office
+1003;ADMIN;YAZILIM SAHIBI;dormhi1;dormhi1
+220303046;STUDENT;davut cüci;dormhi;davut22
+220103903;STUDENT;hamsi;hamsi;hamsi
+340303011;TEACHER;hakan ünal;hakan23;hakan23
