@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="menu system">
-      <change afterPath="$PROJECT_DIR$/src/AuthServiceTest2.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST]AuthService final test">
+      <change afterPath="$PROJECT_DIR$/src/Tests/AuthServiceTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthServiceTest2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,7 @@
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AuthServiceTest.executor": "Run",
+    "JUnit.AuthServiceTest2.executor": "Run",
     "JUnit.IDManagerTest.executor": "Run",
     "JUnit.MainTest.executor": "Run",
     "JUnit.MenuSystemTest.executor": "Run",
@@ -73,14 +76,23 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
       <recent name="Tests" />
+      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AuthServiceTest2">
+  <component name="RunManager" selected="JUnit.QuestionLoaderTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dormhiquizzer" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AuthServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,21 +101,6 @@
       <module name="dormhiquizzer" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AuthServiceTest2" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dormhiquizzer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MainTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,10 +121,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dormhiquizzer" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StudentTest" />
+      <option name="MAIN_CLASS_NAME" value="QuestionLoaderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AuthServiceTest2" />
+        <item itemvalue="JUnit.QuestionLoaderTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AuthServiceTest2" />
+        <item itemvalue="JUnit.AuthServiceTest" />
         <item itemvalue="JUnit.MultipleChoiceQuestionTest" />
-        <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.StudentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -151,14 +148,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00018" summary="new abstract created User.java">
-      <option name="closed" value="true" />
-      <created>1766244767320</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1766244767320</updated>
     </task>
     <task id="LOCAL-00019" summary="teacher class addded and waiting to add new functions in Teacher.java">
       <option name="closed" value="true" />
@@ -544,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767134971375</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="[TEST]AuthService final test">
+      <option name="closed" value="true" />
+      <created>1767135661293</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1767135661293</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,7 +556,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[TEST]bug fixed ve junit tested in QuestionLoader" />
     <MESSAGE value="teacher panel and function added in MenuSystem.java" />
     <MESSAGE value="[TEST] Student class jUnit tested" />
     <MESSAGE value="[BUG FIX] student register problem fixed" />
@@ -584,6 +580,7 @@
     <MESSAGE value="pasword change algoritm added in AuthService.java" />
     <MESSAGE value="Id number changed" />
     <MESSAGE value="menu system" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu system" />
+    <MESSAGE value="[TEST]AuthService final test" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TEST]AuthService final test" />
   </component>
 </project>
