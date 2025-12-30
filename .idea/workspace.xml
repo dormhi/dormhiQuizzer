@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[fix] final version of diagrams">
-      <change afterPath="$PROJECT_DIR$/src/Tests/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/MultipleChoiceQuestionTest.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[TEST] final JUnit tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MultipleChoiceQuestionTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
@@ -144,9 +142,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MultipleChoiceQuestionTest" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.StudentTest" />
         <item itemvalue="JUnit.QuestionLoaderTest2" />
       </list>
@@ -160,14 +158,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00013" summary="xml">
-      <option name="closed" value="true" />
-      <created>1765984344558</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1765984344558</updated>
     </task>
     <task id="LOCAL-00014" summary="new data file: questions.csv">
       <option name="closed" value="true" />
@@ -553,7 +543,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767098335074</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="[TEST] final JUnit tests">
+      <option name="closed" value="true" />
+      <created>1767098681695</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1767098681695</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,7 +566,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="user role authentication method changed" />
     <MESSAGE value="user role authentication method changed in PerformLogin method" />
     <MESSAGE value="[TEST] question function tested" />
     <MESSAGE value="new import added şn QuestionLoader.java" />
@@ -593,6 +590,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="[fix] use case problem fixed" />
     <MESSAGE value="[fix] final version of diagrams" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] final version of diagrams" />
+    <MESSAGE value="[TEST] final JUnit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="[TEST] final JUnit tests" />
   </component>
 </project>
