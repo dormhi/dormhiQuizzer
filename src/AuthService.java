@@ -114,8 +114,61 @@ public class AuthService {
                 }
             }
         } catch (IOException e) {
-            // Ignore errors during read check
         }
         return false;
+    }
+    public java.util.List<String> getAllRegisteredUsers() {
+        java.util.List<String> userList = new java.util.ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(USER_FILE))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                if (!line.trim().isEmpty()) {
+                    userList.add(line);
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Kullanici listesi okunamadi: " + e.getMessage());
+        }
+        return userList;
+    }
+
+    public boolean updateUserPassword(String targetId, String newPassword) {
+        java.util.List<String> lines = new java.util.ArrayList<>();
+        boolean found = false;
+
+        // 1. Dosyayı oku ve hafızaya al
+        try (BufferedReader br = new BufferedReader(new FileReader(USER_FILE))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                if (line.trim().isEmpty()) continue;
+
+                String[] parts = line.split(";");
+
+                if (parts.length == 5 && parts[0].trim().equals(targetId)) {
+                    String newLine = parts[0] + ";" + parts[1] + ";" + parts[2] + ";" + parts[3] + ";" + newPassword;
+                    lines.add(newLine);
+                    found = true;
+                } else {
+                    lines.add(line);
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Dosya okuma hatasi: " + e.getMessage());
+            return false;
+        }
+
+        if (found) {
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(USER_FILE))) {
+                for (String l : lines) {
+                    bw.write(l);
+                    bw.newLine();
+                }
+                return true;
+            } catch (IOException e) {
+                System.out.println("Dosya yazma hatasi: " + e.getMessage());
+                return false;
+            }
+        }
+        return false; // Kullanıcı bulunamadı
     }
 }
