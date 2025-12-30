@@ -2,41 +2,35 @@
 
 ```mermaid
 flowchart TD
-    %% Aktorler
-    Student("👤 Ogrenci")
-    Teacher("👤 Ogretmen")
-    Admin("👤 Yonetici (Admin)")
+    Student("👤 Student")
+    Teacher("👤 Teacher")
+    Admin("👤 Admin")
 
-    %% Kullanim Durumlari (Use Cases)
-    UC1["🔑 Sisteme Giris (Login)"]
-    UC2["📝 Kayit Ol (Register)"]
+    UC1["🔑  Login"]
+    UC2["📝  Register"]
     
-    UC3["✍️ Quiz Coz"]
-    UC4["📊 Puani Goruntule"]
+    UC3["✍️ Solve Quiz"]
+    UC4["📊 Review grade"]
     
-    UC5["➕ Soru Ekle"]
-    UC6["🗑️ Soru Sil"]
+    UC5["➕ Add question"]
+    UC6["🗑️ Remove question"]
     
-    UC7["✅ Izinli ID Ekle"]
-    UC8["🚫 Izinli ID Sil"]
-    UC9["📋 ID Listesini Gor"]
+    UC7["✅ Add Allowed ID"]
+    UC8["🚫 Erase ID"]
+    UC9["📋 Show ID list"]
 
-    %% Ortak Islemler
     Student --> UC1
     Student --> UC2
     Teacher --> UC1
     Teacher --> UC2
     Admin --> UC1
     
-    %% Ogrenci Islemleri
     Student --> UC3
     Student --> UC4
     
-    %% Ogretmen Islemleri
     Teacher --> UC5
     Teacher --> UC6
     
-    %% Admin Islemleri
     Admin --> UC7
     Admin --> UC8
     Admin --> UC9

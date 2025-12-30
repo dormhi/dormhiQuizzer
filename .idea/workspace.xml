@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[CASE] UML and USE CASE diagram markdown">
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[fix] use case problem fixed">
+      <change beforePath="$PROJECT_DIR$/uml.md" beforeDir="false" afterPath="$PROJECT_DIR$/uml.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use_case.md" beforeDir="false" afterPath="$PROJECT_DIR$/use_case.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,22 +156,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00010" summary="xml">
-      <option name="closed" value="true" />
-      <created>1765979913826</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1765979913826</updated>
-    </task>
-    <task id="LOCAL-00011" summary="student class created in Student.java">
-      <option name="closed" value="true" />
-      <created>1765981103023</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1765981103023</updated>
     </task>
     <task id="LOCAL-00012" summary="quiz and main class modified because of Student.java">
       <option name="closed" value="true" />
@@ -548,7 +533,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767096772068</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="test">
+      <option name="closed" value="true" />
+      <created>1767097178911</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1767097178911</updated>
+    </task>
+    <task id="LOCAL-00060" summary="[fix] use case problem fixed">
+      <option name="closed" value="true" />
+      <created>1767097444399</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1767097444399</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,8 +564,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new methodS added in MenuSystem.java" />
-    <MESSAGE value="new methodS added showAdminPanel in MenuSystem.java" />
     <MESSAGE value="[TEST] new menu system class tested again" />
     <MESSAGE value="user role authentication method changed" />
     <MESSAGE value="user role authentication method changed in PerformLogin method" />
@@ -588,6 +587,8 @@
     <MESSAGE value="README.md" />
     <MESSAGE value="[UML] UML and little refactor" />
     <MESSAGE value="[CASE] UML and USE CASE diagram markdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="[CASE] UML and USE CASE diagram markdown" />
+    <MESSAGE value="test" />
+    <MESSAGE value="[fix] use case problem fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] use case problem fixed" />
   </component>
 </project>
