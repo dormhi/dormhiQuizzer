@@ -1,18 +1,25 @@
-usecaseDiagram
-actor "Ogrenci" as Student
-actor "Ogretmen" as Teacher
-actor "Yonetici (Admin)" as Admin
+## 4. Use Case Diagram
 
-    %% Use Cases
-    usecase "Sisteme Giris (Login)" as UC1
-    usecase "Kayit Ol (Register)" as UC2
-    usecase "Quiz Coz" as UC3
-    usecase "Puani Goruntule" as UC4
-    usecase "Soru Ekle" as UC5
-    usecase "Soru Sil" as UC6
-    usecase "Izinli ID Ekle" as UC7
-    usecase "Izinli ID Sil" as UC8
-    usecase "ID Listesini Gor" as UC9
+```mermaid
+flowchart TD
+    %% Aktorler
+    Student("👤 Ogrenci")
+    Teacher("👤 Ogretmen")
+    Admin("👤 Yonetici (Admin)")
+
+    %% Kullanim Durumlari (Use Cases)
+    UC1["🔑 Sisteme Giris (Login)"]
+    UC2["📝 Kayit Ol (Register)"]
+    
+    UC3["✍️ Quiz Coz"]
+    UC4["📊 Puani Goruntule"]
+    
+    UC5["➕ Soru Ekle"]
+    UC6["🗑️ Soru Sil"]
+    
+    UC7["✅ Izinli ID Ekle"]
+    UC8["🚫 Izinli ID Sil"]
+    UC9["📋 ID Listesini Gor"]
 
     %% Ortak Islemler
     Student --> UC1
