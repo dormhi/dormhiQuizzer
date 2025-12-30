@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="Id number changed">
-      <change beforePath="$PROJECT_DIR$/src/MenuSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuSystem.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="menu system">
+      <change afterPath="$PROJECT_DIR$/src/AuthServiceTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,14 +73,23 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="Tests" />
       <recent name="" />
+      <recent name="Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.AuthServiceTest2">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dormhiquizzer" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AuthServiceTest2" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,21 +124,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionLoaderTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dormhiquizzer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.QuestionLoaderTest2" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dormhiquizzer" />
       <option name="PACKAGE_NAME" value="" />
@@ -141,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthServiceTest2" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MultipleChoiceQuestionTest" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.StudentTest" />
-        <item itemvalue="JUnit.QuestionLoaderTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -157,14 +151,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00017" summary="main class modified for new question databasse in Main.java">
-      <option name="closed" value="true" />
-      <created>1766093774939</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1766093774939</updated>
     </task>
     <task id="LOCAL-00018" summary="new abstract created User.java">
       <option name="closed" value="true" />
@@ -550,7 +536,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767133901824</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="menu system">
+      <option name="closed" value="true" />
+      <created>1767134971375</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1767134971375</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +559,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="append question added in QuestionLoader.java" />
     <MESSAGE value="[TEST]bug fixed ve junit tested in QuestionLoader" />
     <MESSAGE value="teacher panel and function added in MenuSystem.java" />
     <MESSAGE value="[TEST] Student class jUnit tested" />
@@ -590,6 +583,7 @@
     <MESSAGE value="pasword forgot algorithm added in MenuSystem.java" />
     <MESSAGE value="pasword change algoritm added in AuthService.java" />
     <MESSAGE value="Id number changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Id number changed" />
+    <MESSAGE value="menu system" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu system" />
   </component>
 </project>
