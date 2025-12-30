@@ -3,5 +3,4 @@ public class Teacher extends User {
         super(id, fullName, username, password);
     }
 
-    //ı will add new methods in there later
 }

@@ -4,4 +4,3 @@ public class Admin extends User {
     }
 }
 
-//waiting to add new methods}
