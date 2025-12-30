@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[fix] use case problem fixed">
-      <change beforePath="$PROJECT_DIR$/uml.md" beforeDir="false" afterPath="$PROJECT_DIR$/uml.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_case.md" beforeDir="false" afterPath="$PROJECT_DIR$/use_case.md" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[fix] final version of diagrams">
+      <change afterPath="$PROJECT_DIR$/src/Tests/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/MultipleChoiceQuestionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,8 +41,10 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AuthServiceTest.executor": "Run",
     "JUnit.IDManagerTest.executor": "Run",
+    "JUnit.MainTest.executor": "Run",
     "JUnit.MenuSystemTest.executor": "Run",
     "JUnit.MenuSystemTest2.executor": "Run",
+    "JUnit.MultipleChoiceQuestionTest.executor": "Run",
     "JUnit.QuestionLoaderTest.executor": "Run",
     "JUnit.QuestionLoaderTest2.executor": "Run",
     "JUnit.StudentTest.executor": "Run",
@@ -76,7 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.MultipleChoiceQuestionTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="dormhiquizzer" />
@@ -84,7 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuSystemTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dormhiquizzer" />
       <extension name="coverage">
         <pattern>
@@ -93,13 +97,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MenuSystemTest2" />
+      <option name="MAIN_CLASS_NAME" value="Tests.MainTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionLoaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultipleChoiceQuestionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dormhiquizzer" />
       <extension name="coverage">
         <pattern>
@@ -108,7 +112,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.QuestionLoaderTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.MultipleChoiceQuestionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MultipleChoiceQuestionTest" />
+        <item itemvalue="JUnit.MainTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.StudentTest" />
         <item itemvalue="JUnit.QuestionLoaderTest2" />
-        <item itemvalue="JUnit.QuestionLoaderTest" />
-        <item itemvalue="JUnit.MenuSystemTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -156,14 +160,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00012" summary="quiz and main class modified because of Student.java">
-      <option name="closed" value="true" />
-      <created>1765982358751</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1765982358751</updated>
     </task>
     <task id="LOCAL-00013" summary="xml">
       <option name="closed" value="true" />
@@ -549,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767097444399</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="[fix] final version of diagrams">
+      <option name="closed" value="true" />
+      <created>1767098335074</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1767098335074</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +568,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[TEST] new menu system class tested again" />
     <MESSAGE value="user role authentication method changed" />
     <MESSAGE value="user role authentication method changed in PerformLogin method" />
     <MESSAGE value="[TEST] question function tested" />
@@ -589,6 +592,7 @@
     <MESSAGE value="[CASE] UML and USE CASE diagram markdown" />
     <MESSAGE value="test" />
     <MESSAGE value="[fix] use case problem fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] use case problem fixed" />
+    <MESSAGE value="[fix] final version of diagrams" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] final version of diagrams" />
   </component>
 </project>
