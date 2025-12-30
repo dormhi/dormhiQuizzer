@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="README.md">
-      <change afterPath="$PROJECT_DIR$/uml.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Teacher.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[UML] UML and little refactor">
+      <change afterPath="$PROJECT_DIR$/use_case.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml.md" beforeDir="false" afterPath="$PROJECT_DIR$/uml.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +156,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00008" summary="some loops finished in Quiz.java">
-      <option name="closed" value="true" />
-      <created>1765656172994</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1765656172994</updated>
     </task>
     <task id="LOCAL-00009" summary="xml">
       <option name="closed" value="true" />
@@ -550,7 +541,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767094378514</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="[UML] UML and little refactor">
+      <option name="closed" value="true" />
+      <created>1767094909276</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1767094909276</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +564,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[TEST] MenuSystemTest.java Junit test" />
     <MESSAGE value="new method added listAllIds() in IDManager.java" />
     <MESSAGE value="new methodS added in MenuSystem.java" />
     <MESSAGE value="new methodS added showAdminPanel in MenuSystem.java" />
@@ -590,6 +588,7 @@
     <MESSAGE value="question eraser algoritm part 2" />
     <MESSAGE value="[FEAT] Implemented ICsvConvertible interface for data serialization" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="[UML] UML and little refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="[UML] UML and little refactor" />
   </component>
 </project>
