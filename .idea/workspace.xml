@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[UML] UML and little refactor">
-      <change afterPath="$PROJECT_DIR$/use_case.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uml.md" beforeDir="false" afterPath="$PROJECT_DIR$/uml.md" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[CASE] UML and USE CASE diagram markdown">
+      <change beforePath="$PROJECT_DIR$/use_case.md" beforeDir="false" afterPath="$PROJECT_DIR$/use_case.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,14 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00009" summary="xml">
-      <option name="closed" value="true" />
-      <created>1765966676897</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1765966676897</updated>
     </task>
     <task id="LOCAL-00010" summary="xml">
       <option name="closed" value="true" />
@@ -549,7 +540,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767094909276</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="[CASE] UML and USE CASE diagram markdown">
+      <option name="closed" value="true" />
+      <created>1767096772068</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1767096772068</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +563,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new method added listAllIds() in IDManager.java" />
     <MESSAGE value="new methodS added in MenuSystem.java" />
     <MESSAGE value="new methodS added showAdminPanel in MenuSystem.java" />
     <MESSAGE value="[TEST] new menu system class tested again" />
@@ -589,6 +587,7 @@
     <MESSAGE value="[FEAT] Implemented ICsvConvertible interface for data serialization" />
     <MESSAGE value="README.md" />
     <MESSAGE value="[UML] UML and little refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="[UML] UML and little refactor" />
+    <MESSAGE value="[CASE] UML and USE CASE diagram markdown" />
+    <option name="LAST_COMMIT_MESSAGE" value="[CASE] UML and USE CASE diagram markdown" />
   </component>
 </project>
