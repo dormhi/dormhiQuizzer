@@ -15,8 +15,7 @@ public class MenuSystem {
 
     public void start() {
         while (true) {
-            System.out.println("\n===========================================");
-            System.out.println("   AREL VADISI QUIZ CHALLENGE A HOSGELDINIZ");
+            System.out.println(" \n AREL VADISI QUIZ CHALLENGE A HOSGELDINIZ");
             System.out.println("===========================================");
             System.out.println("1. Ogretmen Girisi");
             System.out.println("2. Ogrenci Girisi");
@@ -91,7 +90,6 @@ public class MenuSystem {
         User user = authService.login(username, password);
 
         if (user != null) {
-            // Role kontrolü (İngilizce karakter sorunu olmasın diye Locale.ENGLISH)
             String userRole = user.getClass().getSimpleName().toUpperCase(java.util.Locale.ENGLISH);
 
             if (userRole.equals(requiredRole)) {
@@ -131,7 +129,6 @@ public class MenuSystem {
         System.out.println("\nSınav sistemi yükleniyor...");
         Quiz quiz = new Quiz();
         QuestionLoader loader = new QuestionLoader();
-        // QuestionLoader'ın paket yapısına göre import edildiğinden emin ol
         ArrayList<Question> questions = loader.loadQuestions("questions.csv");
 
         if (questions.isEmpty()) {
@@ -151,7 +148,7 @@ public class MenuSystem {
 
         while (true) {
             System.out.println("\n===========================================");
-            System.out.println("   YONETICI KONTROL PANELI (" + admin.getUsername() + ")");
+            System.out.println("  YONETICI KONTROL PANELI (" + admin.getFullName() + ")");
             System.out.println("===========================================");
             System.out.println("1. Izinli Numaralari Listele");
             System.out.println("2. Yeni Numara Ekle (Izin Ver)");
@@ -207,14 +204,13 @@ public class MenuSystem {
 
             } else if (choice.equals("0")) {
                 System.out.println("Yonetici oturumu kapatiliyor...");
-                break; // Döngüyü kırar ve ana menüye döner
+                break;
 
             } else {
                 System.out.println("Hatali secim!");
             }
         }
     }
-
     // --- TEACHER PANEL ---
     private void showTeacherPanel(Teacher teacher) {
         QuestionLoader loader = new QuestionLoader();
@@ -225,7 +221,7 @@ public class MenuSystem {
             System.out.println("===========================================");
             System.out.println("1. Yeni Soru Ekle");
             System.out.println("2. Soru Sil");
-            System.out.println("3. Ogrenci Sifre Listesi (YENI)");
+            System.out.println("3. Ogrenci Sifre Listesi");
             System.out.println("0. Cikis Yap");
             System.out.print("Seciminiz: ");
 
@@ -254,10 +250,8 @@ public class MenuSystem {
                         String option = scanner.nextLine();
                         optionsPart.append(";").append(option);
                     }
-
                     System.out.print("Dogru seceneğin numarasi hangisi? (1-" + numOptions + "): ");
                     String answer = scanner.nextLine();
-
                     String csvLine = "MC;" + text + ";" + score + ";" + answer + optionsPart.toString();
                     loader.appendQuestion(csvLine);
 
@@ -268,19 +262,15 @@ public class MenuSystem {
                     String score = scanner.nextLine();
                     System.out.print("Dogru Cevap (true/false): ");
                     String answer = scanner.nextLine().toLowerCase();
-
                     String csvLine = "TF;" + text + ";" + score + ";" + answer;
                     loader.appendQuestion(csvLine);
-
                 } else {
                     System.out.println("Gecersiz soru tipi!");
                 }
 
             } else if (choice.equals("2")) {
-                // --- SİLME İŞLEMİ ---
                 System.out.println("\n--- VERITABANINDAKI SORULAR ---");
                 List<String> lines = loader.getAllRawQuestions();
-
                 if (lines.isEmpty()) {
                     System.out.println(">> Listelenecek soru bulunamadi.");
                 } else {
@@ -290,7 +280,6 @@ public class MenuSystem {
                             System.out.println((i + 1) + ". " + parts[1] + " (" + parts[2] + " Puan)");
                         }
                     }
-
                     System.out.print("\nSilmek istediginiz soru no (Iptal icin 0): ");
                     try {
                         int delIndex = Integer.parseInt(scanner.nextLine());
@@ -307,20 +296,30 @@ public class MenuSystem {
                 }
 
             } else if (choice.equals("3")) {
-                // --- SADECE GÖRÜNTÜLEME ---
-                System.out.println("\n--- KAYITLI KULLANICI LISTESI ---");
+                System.out.println("\n--- KAYITLI OGRENCILER ---");
                 List<String> users = authService.getAllRegisteredUsers();
+
                 System.out.println("ID  |  ROL  |  AD SOYAD  |  KULLANICI ADI  |  SIFRE");
                 System.out.println("-------------------------------------------------------");
+
+                boolean studentFound = false;
                 for (String u : users) {
-                    System.out.println(u.replace(";", "  |  "));
+                    String[] parts = u.split(";");
+                    if (parts.length > 1 && parts[1].equalsIgnoreCase("STUDENT")) {
+                        System.out.println(u.replace(";", "  |  "));
+                        studentFound = true;
+                    }
+                }
+
+                if (!studentFound) {
+                    System.out.println(">> Sistemde kayitli ogrenci bulunmamaktadir.");
                 }
                 System.out.println("-------------------------------------------------------");
-                System.out.println("NOT: Sifre degisikligi icin Yoneticiye basvurunuz.");
+                System.out.println("NOT: Sifre degisikligi veya Ogretmen bilgileri icin Yoneticiye basvurunuz.");
 
             } else if (choice.equals("0")) {
                 System.out.println("Ogretmen oturumu kapatiliyor...");
-                break; // Döngüyü kırar
+                break;
 
             } else {
                 System.out.println("Hatali secim!");

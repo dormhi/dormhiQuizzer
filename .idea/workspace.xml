@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="pasword forgot algorithm added in MenuSystem.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthService.java" afterDir="false" />
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="Id number changed">
       <change beforePath="$PROJECT_DIR$/src/MenuSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,22 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00015" summary="new java class: QuestionLoader.java">
-      <option name="closed" value="true" />
-      <created>1766090606537</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1766090606537</updated>
-    </task>
-    <task id="LOCAL-00016" summary="sample question methods transfered in QuestionLoader.java">
-      <option name="closed" value="true" />
-      <created>1766093526464</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1766093526464</updated>
     </task>
     <task id="LOCAL-00017" summary="main class modified for new question databasse in Main.java">
       <option name="closed" value="true" />
@@ -553,7 +534,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767132661191</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="pasword change algoritm added in AuthService.java">
+      <option name="closed" value="true" />
+      <created>1767133847918</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1767133847918</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Id number changed">
+      <option name="closed" value="true" />
+      <created>1767133901824</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1767133901824</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,8 +565,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[TEST] question function tested" />
-    <MESSAGE value="new import added şn QuestionLoader.java" />
     <MESSAGE value="append question added in QuestionLoader.java" />
     <MESSAGE value="[TEST]bug fixed ve junit tested in QuestionLoader" />
     <MESSAGE value="teacher panel and function added in MenuSystem.java" />
@@ -593,6 +588,8 @@
     <MESSAGE value="[fix] final version of diagrams" />
     <MESSAGE value="[TEST] final JUnit tests" />
     <MESSAGE value="pasword forgot algorithm added in MenuSystem.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="pasword forgot algorithm added in MenuSystem.java" />
+    <MESSAGE value="pasword change algoritm added in AuthService.java" />
+    <MESSAGE value="Id number changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Id number changed" />
   </component>
 </project>
