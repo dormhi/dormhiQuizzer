@@ -4,5 +4,3 @@ MC;What is the result of 2+2?;10;2;3;4;5;6
 TF;Constructors have the same name as the class.;5;true
 MC;Which is NOT a primitive type?;15;3;int;boolean;String;char
 MC;javanın mucidi kimdir;20;1;james gosling;nikola tesla;elon musk
-
-TF;ali kaya kayadan oluşur;40;true

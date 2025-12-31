@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="preparing to relase: english translation">
+    <list default="true" id="27a9d101-8495-42bf-a6ce-d9dcdedc4a90" name="Changes" comment="[FIX] empty line error fixed in LoadQuestion method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allowed_ids.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allowed_ids.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/questions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuestionLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,38 +33,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.AuthServiceTest.executor": "Run",
-    "JUnit.AuthServiceTest2.executor": "Run",
-    "JUnit.IDManagerTest.executor": "Run",
-    "JUnit.MainTest.executor": "Run",
-    "JUnit.MenuSystemTest.executor": "Run",
-    "JUnit.MenuSystemTest2.executor": "Run",
-    "JUnit.MultipleChoiceQuestionTest.executor": "Run",
-    "JUnit.QuestionLoaderTest.executor": "Run",
-    "JUnit.QuestionLoaderTest2.executor": "Run",
-    "JUnit.StudentTest.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/dormhi./IdeaProjects/dormhiquizzer/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.AuthServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthServiceTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IDManagerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenuSystemTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenuSystemTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MultipleChoiceQuestionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuestionLoaderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.QuestionLoaderTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentTest.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/dormhi./IdeaProjects/dormhiquizzer/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -150,14 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765225769453</updated>
-    </task>
-    <task id="LOCAL-00024" summary="2 classes chanced for new abstract: User.java">
-      <option name="closed" value="true" />
-      <created>1766246528526</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1766246528526</updated>
     </task>
     <task id="LOCAL-00025" summary="allowed_ids.csv created">
       <option name="closed" value="true" />
@@ -543,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767176306538</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="[FIX] empty line error fixed in LoadQuestion method">
+      <option name="closed" value="true" />
+      <created>1767177102254</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1767177102254</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -558,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[BUG] &quot;}&quot; error" />
     <MESSAGE value="[BUG FİX] &quot;}&quot; error fixed" />
     <MESSAGE value="[JAVADOC] Student.java explanation" />
     <MESSAGE value="upgraded version MenuSystem.java" />
@@ -583,6 +579,7 @@
     <MESSAGE value="[fix] question add problem fixed" />
     <MESSAGE value="[FIX] test class error fixed" />
     <MESSAGE value="preparing to relase: english translation" />
-    <option name="LAST_COMMIT_MESSAGE" value="preparing to relase: english translation" />
+    <MESSAGE value="[FIX] empty line error fixed in LoadQuestion method" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FIX] empty line error fixed in LoadQuestion method" />
   </component>
 </project>
