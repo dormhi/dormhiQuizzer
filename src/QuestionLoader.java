@@ -48,10 +48,19 @@ public class QuestionLoader {
     }
 
     public void appendQuestion(String csvLine) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("questions.csv", true))) {
+        java.io.File file = new java.io.File("questions.csv");
+
+        boolean fileExistsAndHasData = file.exists() && file.length() > 0;
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file, true))) {
+
+            if (fileExistsAndHasData) {
+                bw.newLine();
+            }
             bw.write(csvLine);
-            bw.newLine();
+
             System.out.println("Soru basariyla veritabani dosyasina eklendi!");
+
         } catch (IOException e) {
             System.out.println("Soru kaydedilirken hata olustu: " + e.getMessage());
         }
@@ -61,7 +70,7 @@ public class QuestionLoader {
             return Files.readAllLines(Paths.get("questions.csv"));
         } catch (IOException e) {
             System.out.println("Dosya okunurken hata: " + e.getMessage());
-            return new ArrayList<>(); // Boş liste dön
+            return new ArrayList<>();
         }
     }
 
@@ -70,7 +79,7 @@ public class QuestionLoader {
             List<String> lines = getAllRawQuestions();
 
             if (index >= 0 && index < lines.size()) {
-                String removed = lines.remove(index); // Listeden sil
+                String removed = lines.remove(index);
 
                 Files.write(Paths.get("questions.csv"), lines);
                 System.out.println("Soru silindi: " + removed.split(";")[1]);
