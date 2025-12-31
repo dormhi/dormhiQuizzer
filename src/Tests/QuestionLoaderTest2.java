@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-class QuestionLoaderTest {
+class QuestionLoaderTest2 {
 
     private QuestionLoader loader;
 
