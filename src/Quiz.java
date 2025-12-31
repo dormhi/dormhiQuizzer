@@ -19,7 +19,7 @@ public class Quiz {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n");
         System.out.println("\n");
-        System.out.println("WELCOME THE AREL VADISI QUIZ CHALLENCE:  " + student.getFullName().toUpperCase() + " (" + student.getFullName() + ")");
+        System.out.println("WELCOME THE QUIZ CHALLENCE:  " + student.getFullName().toUpperCase() + " (" + student.getFullName() + ")");
         System.out.println("Get ready! Here come the questions...\n");
 
         int questionCount = 1;

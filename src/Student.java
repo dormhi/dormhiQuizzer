@@ -1,8 +1,8 @@
 /**
- * Üniversite öğrencisini temsil eden sınıf.
- * User sınıfından türetilmiştir ve sınav puanı verisini ek olarak tutar.
+ * Class representing a university student.
+ * Derived from the User class and additionally holds exam score data.
  *
- * @author [Senin Adın]
+ * @author [Your Name]
  * @version 1.0
  * @since 2025-12-08
  */
@@ -10,13 +10,13 @@ public class Student extends User {
     private int examScore;
 
     /**
-     * Yeni bir öğrenci oluşturur.
-     * Başlangıç sınav puanı 0 olarak ayarlanır.
+     * Creates a new student.
+     * Initial exam score is set to 0.
      *
-     * @param id       Öğrenci Okul Numarası
-     * @param fullName Ad Soyad
-     * @param username Sistem Giriş Adı
-     * @param password Giriş Şifresi
+     * @param id       Student School ID
+     * @param fullName Full Name
+     * @param username System Username
+     * @param password Login Password
      */
     public Student(String id, String fullName, String username, String password) {
         super(id, fullName, username, password);
@@ -24,10 +24,10 @@ public class Student extends User {
     }
 
     /**
-     * Öğrencinin mevcut sınav puanına ekleme yapar.
-     * Negatif puan eklenmesini engeller.
+     * Adds to the student's current exam score.
+     * Prevents adding negative scores.
      *
-     * @param score Eklenecek puan miktarı (pozitif olmalı)
+     * @param score Amount of points to add (must be positive)
      */
     public void addToScore(int score) {
         if (score > 0) {
@@ -36,9 +36,9 @@ public class Student extends User {
     }
 
     /**
-     * Öğrencinin güncel sınav puanını döndürür.
+     * Returns the student's current exam score.
      *
-     * @return Toplam puan
+     * @return Total score
      */
     public int getExamScore() {
         return examScore;
