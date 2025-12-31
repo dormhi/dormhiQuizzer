@@ -1,5 +1,5 @@
 # Quiz System for OOP Project 🎓
-# My procect title(Arel Vadisi Quiz challence)
+# My procect title(DormhiQuizzer)
 
 introduction= That ia a sample quiz sytem
 
