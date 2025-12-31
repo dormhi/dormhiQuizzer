@@ -17,13 +17,39 @@ public class QuestionLoader {
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {
+                // 1. Check if line is empty
+                if (line.trim().isEmpty()) {
+                    continue;
+                }
+
                 String[] parts = line.split(";");
 
-                String type = parts[0];     // Multiple Choice (MC) or True/False (TF)
-                String text = parts[1];     // Question text
-                int score = Integer.parseInt(parts[2]); // Score
+                // 2. SAFETY CHECK: Do we have enough data?
+                // A valid line needs at least: Type;Text;Score (3 parts)
+                if (parts.length < 3) {
+                    System.out.println("Skipping invalid line: " + line);
+                    continue;
+                }
+
+                String type = parts[0];
+                String text = parts[1];
+
+                // Safety for number parsing
+                int score = 0;
+                try {
+                    score = Integer.parseInt(parts[2]);
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid score format in line: " + line);
+                    continue;
+                }
 
                 if (type.equals("MC")) {
+                    // MC needs at least 5 parts: Type;Text;Score;AnswerIndex;Option1...
+                    if (parts.length < 5) {
+                        System.out.println("Skipping incomplete MC question: " + line);
+                        continue;
+                    }
+
                     int correctAnswerIndex = Integer.parseInt(parts[3]);
                     ArrayList<String> options = new ArrayList<>();
 
@@ -33,7 +59,12 @@ public class QuestionLoader {
 
                     loadedQuestions.add(new MultipleChoiceQuestion(text, score, options, correctAnswerIndex));
 
-                } else if (type.equals("TF")) {  // True/False
+                } else if (type.equals("TF")) {
+                    // TF needs 4 parts: Type;Text;Score;Answer
+                    if (parts.length < 4) {
+                        System.out.println("Skipping incomplete TF question: " + line);
+                        continue;
+                    }
                     boolean correctAnswer = Boolean.parseBoolean(parts[3]);
                     loadedQuestions.add(new TrueFalseQuestion(text, score, correctAnswer));
                 }
@@ -47,7 +78,6 @@ public class QuestionLoader {
 
         return loadedQuestions;
     }
-
     public void appendQuestion(String csvLine) {
         File file = new File("questions.csv");
 
