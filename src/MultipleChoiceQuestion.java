@@ -25,4 +25,8 @@ public class MultipleChoiceQuestion extends Question {
             return false;
         }
     }
+
+    public String[] getOptions() {
+        return options.toArray(new String[0]);
+    }
 }

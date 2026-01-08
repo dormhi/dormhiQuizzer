@@ -49,7 +49,8 @@ public class AuthService {
 
     /**
      * Registers a new user.
-     * First checks if the ID is authorized, then checks if it is already registered.
+     * First checks if the ID is authorized, then checks if it is already
+     * registered.
      *
      * @param id       Institution ID (Student/Teacher ID)
      * @param fullName Full Name
@@ -73,6 +74,17 @@ public class AuthService {
         // 3. Save to File
         String role = idManager.getRole(id);
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(USER_FILE, true))) {
+            // Check if file needs a newline before appending
+            File userFile = new File(USER_FILE);
+            if (userFile.exists() && userFile.length() > 0) {
+                try (RandomAccessFile raf = new RandomAccessFile(userFile, "r")) {
+                    raf.seek(userFile.length() - 1);
+                    int lastChar = raf.read();
+                    if (lastChar != '\n' && lastChar != '\r') {
+                        bw.newLine(); // Add newline if file doesn't end with one
+                    }
+                }
+            }
             String newUserLine = id + ";" + role + ";" + fullName + ";" + username + ";" + password;
             bw.write(newUserLine);
             bw.newLine(); // Ensure we move to the next line
@@ -110,7 +122,8 @@ public class AuthService {
         try (BufferedReader br = new BufferedReader(new FileReader(USER_FILE))) {
             String line;
             while ((line = br.readLine()) != null) {
-                if (line.trim().isEmpty()) continue;
+                if (line.trim().isEmpty())
+                    continue;
                 String[] parts = line.split(";");
                 if (parts.length > 0 && parts[0].trim().equals(id.trim())) {
                     return true;
@@ -145,7 +158,8 @@ public class AuthService {
         try (BufferedReader br = new BufferedReader(new FileReader(USER_FILE))) {
             String line;
             while ((line = br.readLine()) != null) {
-                if (line.trim().isEmpty()) continue;
+                if (line.trim().isEmpty())
+                    continue;
 
                 String[] parts = line.split(";");
 

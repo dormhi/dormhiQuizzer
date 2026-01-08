@@ -1,7 +1,14 @@
-//main class just starting menu system class now
+import javax.swing.SwingUtilities;
+
+/**
+ * Main class - Starts the Quiz System with Swing UI
+ */
 public class Main {
     public static void main(String[] args) {
-        MenuSystem menu = new MenuSystem();
-        menu.start();
+        // Run Swing UI on Event Dispatch Thread
+        SwingUtilities.invokeLater(() -> {
+            MainFrame frame = new MainFrame();
+            frame.setVisible(true);
+        });
     }
 }

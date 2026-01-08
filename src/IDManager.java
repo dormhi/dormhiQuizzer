@@ -37,7 +37,6 @@ public class IDManager {
         }
     }
 
-
     public boolean isIdAllowed(String id) {
         return allowedIds.containsKey(id);
     }
@@ -61,6 +60,7 @@ public class IDManager {
             System.out.println("ID not found!");
         }
     }
+
     public void listAllIds() {
         System.out.println("\n--- SISTEMDEKI IZINLI NUMARALAR ---");
         if (allowedIds.isEmpty()) {
@@ -71,5 +71,14 @@ public class IDManager {
             }
         }
         System.out.println("-----------------------------------");
+    }
+
+    public java.util.List<String[]> getAllIds() {
+        loadIds(); // Refresh from file
+        java.util.List<String[]> result = new java.util.ArrayList<>();
+        for (Map.Entry<String, String> entry : allowedIds.entrySet()) {
+            result.add(new String[] { entry.getKey(), entry.getValue() });
+        }
+        return result;
     }
 }
